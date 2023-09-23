@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\WoController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/wo/create', [WoController::class, 'create'])->name('wo.create');
+Route::get('/user/index', [UserController::class, 'index'])->name('user.index');
