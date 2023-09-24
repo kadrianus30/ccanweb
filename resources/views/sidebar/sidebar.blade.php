@@ -6,7 +6,7 @@
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Dashboard</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{{ route('wo.index') }}">Create WO</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="{{ route('user.index') }}">Create User</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Record</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a>
         </div>
