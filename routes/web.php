@@ -23,5 +23,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/wo/create', [WoController::class, 'create'])->name('wo.create');
+Route::resource('wo', WoController::class);
+
 Route::get('/user/index', [UserController::class, 'index'])->name('user.index');

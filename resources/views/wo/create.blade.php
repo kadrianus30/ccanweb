@@ -42,9 +42,9 @@
 
                         <div class="col-12 col-sm-4">
                             <div class="form-group local-forms calendar-icon">
-                                <label>Date Of Birth <span class="login-danger">*</span></label>
-                                <input class="form-control datetimepicker @error('date_of_birth') is-invalid @enderror" name="date_of_birth" type="text" placeholder="DD-MM-YYYY" value="{{ old('date_of_birth') }}">
-                                @error('date_of_birth')
+                                <label>Kategori OA <span class="login-danger">*</span></label>
+                                <input class="form-control datetimepicker @error('kategori_oa') is-invalid @enderror" name="kategori_oa" type="text" placeholder="DD-MM-YYYY" value="{{ old('kategori_oa') }}">
+                                @error('kategori_oa')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -53,9 +53,9 @@
                         </div>
                         <div class="col-12 col-sm-4">
                             <div class="form-group local-forms">
-                                <label>Roll </label>
-                                <input class="form-control @error('roll') is-invalid @enderror" type="text" name="roll" placeholder="Enter Roll Number" value="{{ old('roll') }}">
-                                @error('roll')
+                                <label>Nama PIC </label>
+                                <input class="form-control @error('nama_pic') is-invalid @enderror" type="text" name="nama_pic" placeholder="Enter nama_pic Number" value="{{ old('nama_pic') }}">
+                                @error('nama_pic')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -64,14 +64,9 @@
                         </div>
                         <div class="col-12 col-sm-4">
                             <div class="form-group local-forms">
-                                <label>Blood Group <span class="login-danger">*</span></label>
-                                <select class="form-control select @error('blood_group') is-invalid @enderror" name="blood_group">
-                                    <option selected disabled>Please Select Group </option>
-                                    <option value="A+" {{ old('blood_group') == 'A+' ? "selected" :""}}>A+</option>
-                                    <option value="B+" {{ old('blood_group') == 'B+' ? "selected" :""}}>B+</option>
-                                    <option value="O+" {{ old('blood_group') == 'O+' ? "selected" :""}}>O+</option>
-                                </select>
-                                @error('blood_group')
+                                <label>Tlp. PIC </label>
+                                <input class="form-control @error('telp_pic') is-invalid @enderror" type="text" name="telp_pic" placeholder="Enter telp_pic Number" value="{{ old('telp_pic') }}">
+                                @error('telp_pic')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -80,14 +75,41 @@
                         </div>
                         <div class="col-12 col-sm-4">
                             <div class="form-group local-forms">
-                                <label>Religion <span class="login-danger">*</span></label>
-                                <select class="form-control select @error('religion') is-invalid @enderror" name="religion">
-                                    <option selected disabled>Please Select Religion </option>
-                                    <option value="Hindu" {{ old('religion') == 'Hindu' ? "selected" :""}}>Hindu</option>
-                                    <option value="Christian" {{ old('religion') == 'Christian' ? "selected" :""}}>Christian</option>
-                                    <option value="Others" {{ old('religion') == 'Others' ? "selected" :""}}>Others</option>
-                                </select>
-                                @error('religion')
+                                <label>Layanan Mbps </label>
+                                <input class="form-control @error('layanan_mbps') is-invalid @enderror" type="text" name="layanan_mbps" placeholder="Enter layanan_mbps Number" value="{{ old('layanan_mbps') }}">
+                                @error('layanan_mbps')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-4">
+                            <div class="form-group local-forms">
+                                <label>Segmen <span class="login-danger">*</span></label>
+                                <input class="form-control @error('segmen') is-invalid @enderror" type="text" name="segmen" placeholder="Enter segmen Address" value="{{ old('segmen') }}">
+                                @error('segmen')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="pt-3 col-12">
+                            <h5 class="form-title student-info">P2P
+                                <span>
+                                    <a href="javascript:;"><i class="feather-more-vertical"></i></a>
+                                </span>
+                            </h5>
+                        </div>
+
+                        <div class="col-12 col-sm-4">
+                            <div class="form-group local-forms">
+                                <label>SID </label>
+                                <input class="form-control @error('sid') is-invalid @enderror" type="text" name="sid" placeholder="Enter Admission ID" value="{{ old('sid') }}">
+                                @error('sid')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -96,9 +118,9 @@
                         </div>
                         <div class="col-12 col-sm-4">
                             <div class="form-group local-forms">
-                                <label>E-Mail <span class="login-danger">*</span></label>
-                                <input class="form-control @error('email') is-invalid @enderror" type="text" name="email" placeholder="Enter Email Address" value="{{ old('email') }}">
-                                @error('email')
+                                <label>SN ONT </label>
+                                <input class="form-control @error('snont') is-invalid @enderror" type="text" name="snont" placeholder="Enter Admission ID" value="{{ old('snont') }}">
+                                @error('snont')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -107,14 +129,9 @@
                         </div>
                         <div class="col-12 col-sm-4">
                             <div class="form-group local-forms">
-                                <label>Class <span class="login-danger">*</span></label>
-                                <select class="form-control select @error('class') is-invalid @enderror" name="class">
-                                    <option selected disabled>Please Select Class </option>
-                                    <option value="12" {{ old('class') == '12' ? "selected" :""}}>12</option>
-                                    <option value="11" {{ old('class') == '11' ? "selected" :""}}>11</option>
-                                    <option value="10" {{ old('class') == '10' ? "selected" :""}}>10</option>
-                                </select>
-                                @error('class')
+                                <label>LAN </label>
+                                <input class="form-control @error('lan') is-invalid @enderror" type="text" name="lan" placeholder="Enter Admission ID" value="{{ old('lan') }}">
+                                @error('lan')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -123,14 +140,9 @@
                         </div>
                         <div class="col-12 col-sm-4">
                             <div class="form-group local-forms">
-                                <label>Section <span class="login-danger">*</span></label>
-                                <select class="form-control select @error('section') is-invalid @enderror" name="section">
-                                    <option selected disabled>Please Select Section </option>
-                                    <option value="A" {{ old('section') == 'A' ? "selected" :""}}>A</option>
-                                    <option value="B" {{ old('section') == 'B' ? "selected" :""}}>B</option>
-                                    <option value="C" {{ old('section') == 'C' ? "selected" :""}}>C</option>
-                                </select>
-                                @error('section')
+                                <label>IP </label>
+                                <input class="form-control @error('ip') is-invalid @enderror" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" name="ip" placeholder="Enter Phone Number" value="{{ old('ip') }}">
+                                @error('ip')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -139,9 +151,9 @@
                         </div>
                         <div class="col-12 col-sm-4">
                             <div class="form-group local-forms">
-                                <label>Admission ID </label>
-                                <input class="form-control @error('admission_id') is-invalid @enderror" type="text" name="admission_id" placeholder="Enter Admission ID" value="{{ old('admission_id') }}">
-                                @error('admission_id')
+                                <label>GW </label>
+                                <input class="form-control @error('gw') is-invalid @enderror" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" name="gw" placeholder="Enter Phone Number" value="{{ old('gw') }}">
+                                @error('gw')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -150,33 +162,20 @@
                         </div>
                         <div class="col-12 col-sm-4">
                             <div class="form-group local-forms">
-                                <label>Phone </label>
-                                <input class="form-control @error('phone_number') is-invalid @enderror" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" name="phone_number" placeholder="Enter Phone Number" value="{{ old('phone_number') }}">
-                                @error('phone_number')
+                                <label>SM </label>
+                                <input class="form-control @error('sm') is-invalid @enderror" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" name="sm" placeholder="Enter Phone Number" value="{{ old('sm') }}">
+                                @error('sm')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4">
-                            <div class="form-group students-up-files">
-                                <label>Upload Student Photo (150px X 150px)</label>
-                                <div class="uplod">
-                                    <label class="file-upload image-upbtn mb-0 @error('upload') is-invalid @enderror">
-                                        Choose File <input type="file" name="upload">
-                                    </label>
-                                    @error('upload')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
+
+                        <div class="pt-4 col-12">
                             <div class="student-submit">
                                 <button type="submit" class="btn btn-primary">Submit</button>
+                                <a class="btn btn-danger" href="{{ route('wo.index') }}">Back</a>
                             </div>
                         </div>
                     </div>
