@@ -5,7 +5,7 @@
     <a class="btn btn-primary" href="{{ route('wo.create') }}">Create</a>
     <p>Ini adalah halaman hasil Work Order.</p>
     <div class="table-responsive">
-        <table class="table table-striped">
+        <table class="table table-striped" id="employeeTable">>
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -61,3 +61,10 @@
         </table>
     </div>
 @endsection
+@push('scripts')
+    <script type="module">
+        $(document).ready(function() {
+            $('#employeeTable').DataTable();
+        });
+    </script>
+@endpush

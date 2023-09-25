@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('alamat');
             $table->string('kategori_oa');
             $table->string('nama_pic');
-            $table->integer('telp_pic');
+            $table->string('telp_pic');
             $table->integer('layanan_mbps');
             $table->string('segmen');
             $table->string('sid')->nullable();

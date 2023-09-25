@@ -1,12 +1,7 @@
 import './bootstrap';
-/*!
-* Start Bootstrap - Simple Sidebar v6.0.6 (https://startbootstrap.com/template/simple-sidebar)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
-*/
-//
-// Scripts
-//
+import 'datatables.net-bs5';
+import 'datatables.net-buttons-bs5';
+import.meta.glob(["../images/**"]);
 
 window.addEventListener('DOMContentLoaded', event => {
 
